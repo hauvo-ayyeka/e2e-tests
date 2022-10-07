@@ -33,6 +33,6 @@ Then('I should see the home page', async function (this: ICustomWorld) {
   const page = this.page!
 
   await expect(page).toHaveURL(/.*Home\/Index/, { timeout: 180 * 1000 });
-  await expect(page.locator('#OwnerApp_0')).toBeVisible()
-  await expect(page.locator('#AppHeader_0 > div.dojoxExpandoWrapper > div > div.navBodyLeading > img')).toBeVisible()
+  await expect(page.locator('#OwnerApp_0')).toBeVisible({ timeout: 180 * 1000 })
+  await expect(page.locator('#AppHeader_0 > div.dojoxExpandoWrapper > div > div.navBodyLeading > img')).toBeVisible({ timeout: 180 * 1000 })
 })
