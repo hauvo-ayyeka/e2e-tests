@@ -22,9 +22,11 @@ async function setupNodeEvents(
 }
 
 export default defineConfig({
+  projectId: 'v8tns1',
   e2e: {
     specPattern: "**/*.feature",
-    supportFile: false,
+    supportFile: 'cypress/support/e2e.ts',
     setupNodeEvents,
+    pageLoadTimeout: 1000 * 180
   },
 });

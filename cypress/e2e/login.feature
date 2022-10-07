@@ -1,4 +1,6 @@
 Feature: home.ayyeka.com
   Scenario: visiting the frontpage
-    When I visit home.ayyeka.com
-    Then I should see a username input
+    Given I am "Hau"
+    When I visit staging site
+    Then I enter my credentials and login
+    Then I should see the home page
