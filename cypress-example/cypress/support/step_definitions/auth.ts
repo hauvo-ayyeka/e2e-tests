@@ -9,7 +9,7 @@ defineStep("I am {string}", function (name: string) {
 })
 
 defineStep('I visit ayyeka site', () => {
-  cy.visit("https://home.ayyeka.com/");
+  cy.visit("https://home-stage-v2.ayyeka.com/");
 })
 
 defineStep('I enter my credentials and login', function() {
