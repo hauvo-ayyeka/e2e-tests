@@ -27,6 +27,6 @@ export default defineConfig({
     specPattern: "**/*.feature",
     supportFile: 'cypress/support/e2e.ts',
     setupNodeEvents,
-    pageLoadTimeout: 1000 * 180
+    pageLoadTimeout: 1000 * 360
   },
 });
